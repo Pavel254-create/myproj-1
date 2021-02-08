@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Блочная верстка</title>
+		<link rel="stylesheet" href="main.css">
+		<script type="text/javascript">
+			function text_out() {
+				return '<p>' + document.getElementById('us-name').value + '</p>' + '<p>' + document.getElementById('number').value + '</p>' + '<p>' + document.getElementById('mail').value + '</p>' + '<p>' + document.getElementById('dare').value + '</p>'+ '<p>' + document.getElementById('country').value + '</p>' + '<p>' + document.getElementById('com').value + '</p>';
+			}
+		</script>
+	</head>
+	
+	<body>
+		
+		<div class="wrapper">
+		
+		<div class="header">
+         <div class="inner-header"><ul><li><a href="lab1.html">Лаб 1</a></li><li><a href="lab3.html">Лаб 3</a></li></ul></div>
+		</div>
+		
+		<div class="row">
+		<div class="content"><div class="inner-content">Техника и технологии постоянно совершенствуются. Когда-то были паровозы, позже появились поезда, а сейчас во многих странах мира по рельсам скользят машины футуристического вида с невероятной скоростью. А вот сами железнодорожные рельсы за многие годы существенно не изменились и во всех государствах выглядят практически одинаково. 
+
+Каждый знает, что вокруг рельс на всем пути их пролегания насыпаны камни различных размеров. И это не просто валуны, они имеют научное название — балласт или балласт рельс. Но зачем они нужны? </div>
+	    
+
+	    </div>
+		<!-- Контейнер для формы -->
+		<div class="sidebar">
+		<div class="inner-sidebar">
+        <div id="reg">
+	           <form action="#" autocomplete="on" >
+		           	<fieldset>
+			           	 <legend>Анкета регистрации</legend>	
+			           	 
+			           	 <label for="us-name">Введите имя: </label>
+			           	 <input id="us-name"type="text" placeholder="Например, Иван" 
+			           	 maxlength="10" minlength="1">
+			           	 
+			           	 <label for="number"><br>Введите номер телефона: </label>
+			           	 <input id="number" type="tel" placeholder="+7 999 999 99 99" ></br>
+
+			           	 <label for="mail">Введие email:</label>
+			           	 <input id="mail" type="email" placeholder="men123@mail.ru" >
+
+			           	 
+
+			             <label for="date"><br>Введите дату рождения:</label>
+			             <input type="date" id = "dare">
+
+			            
+			             <label for="#"><br>Выберите страну проживания:</label>
+				             <select id="country">
+				             	<option selected value="Россия">Россия</option>
+				             	<option value="Украина">Украина</option>
+				             	<option value="Беларусь">Беларусь</option>
+				             </select>
+
+			             
+
+			             <br>
+
+			             <label for="com"><br>Введите доп.информацию:</label>
+			             <textarea id="com" cols="20" rows="1"></textarea>
+
+			             <br>
+			           	 <button class="dws" type="submit" onclick="document.write(text_out())">распечатать</button>     			       
+							<div id = result>
+								
+							</div>			
+					</fieldset>				
+				</form>
+			</div>
+		</div>
+		</div>
+		</div>			
+
+	<div class="footer"><div class="inner-footer"><ul><li>Все права защищены</li> <li>НТО</li></ul></div> </div>
+	</div>
+	</body>
+</html>
